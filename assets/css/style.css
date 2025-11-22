@@ -44,6 +44,20 @@ p {
     }
 }
 
+@media (max-width: 520px) {
+    .content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 .nav-bar {
     width: 100%;
     position: relative;
@@ -58,7 +72,7 @@ p {
 
 .nav-bar .logo {
     display: flex;
-    gap: 27px;   
+    gap: 27px;
 }
 
 .nav-bar .logo img {
@@ -111,7 +125,7 @@ p {
 }
 
 .nav-bar .btn-group .line-btn p {
-    font-family:"Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 30px;
     color: #FFFFFF;
 }
@@ -122,15 +136,19 @@ p {
     border: none;
     border-radius: 80px;
 }
+
 .nav-bar .btn-group .budget-btn p {
-    font-family:"Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 28px;
     color: #FFFFFF;
 }
 
 .nav-bar .menu-bar {
-    width: 100px;
     display: none;
+}
+
+.nav-bar .menu-bar img {
+    width: 80px;
 }
 
 .nav-bar .menu-bar:hover {
@@ -141,13 +159,74 @@ p {
     .nav-bar {
         padding-right: 20px;
     }
+
     .nav-bar .btn-group {
         display: none;
     }
-    
+
     .nav-bar .menu-bar {
         display: block;
         cursor: pointer;
+    }
+}
+
+@media (max-width:830px) {
+    .nav-bar {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-bar .logo img {
+        width: 90px;
+    }
+
+    .nav-bar .menu-bar img {
+        width: 65px;
+    }
+
+    .nav-bar .logo-text h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:560px) {
+    .nav-bar .logo {
+        gap: 18px;
+    }
+
+    .nav-bar .logo img {
+        width: 90px;
+    }
+
+    .nav-bar .menu-bar img {
+        width: 65px;
+    }
+
+    .nav-bar .logo-text h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:470px) {
+    .nav-bar .logo {
+            gap: 12px;
+    }
+
+    .nav-bar .logo img {
+        width: 70px;
+    }
+
+    .nav-bar .logo-text h2 {
+        font-size: 18px;
+    }
+
+    .nav-bar .logo-text p {
+        font-size: 15px;
+    }
+
+    .nav-bar .menu-bar img {
+        width: 50px;
     }
 }
 
@@ -157,18 +236,80 @@ p {
     background-image: url('../images/sc1-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     display: flex;
     align-items: center;
     padding-left: 138px;
 }
 
-.section-1 h2  {
+.section-1 h2 {
     font-family: "inter", sans-serif;
     font-size: 38px;
     color: white;
     font-weight: normal;
     line-height: 60px;
+}
+
+.section-1 br.sp {
+    display: none;
+}
+
+@media (max-width: 1260px) {
+    .section-1 {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-1 {
+        height: 560px;
+    }
+
+    .section-1 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-1 h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        height: 450px;
+    }
+
+    .section-1 h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 660px) {
+    .section-1 {
+        height: 390px;
+    }
+
+    .section-1 h2 {
+        font-size: 18px;
+    }
+
+    .section-1 br.sp {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-1 {
+        height: 265px;
+    }
+
+    .section-1 h2 {
+        font-size: 16px;
+        line-height: 47px;
+    }
 }
 
 .section-2 {
@@ -182,7 +323,9 @@ p {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 150px;
     color: #A1B7AC;
+    opacity: 0.5;
     top: 16px;
+    z-index: -1;
 }
 
 .section-2 .badge-text {
@@ -208,6 +351,113 @@ p {
     color: #295D45;
 }
 
+
 .section-2 br.sp {
     display: none;
+}
+
+.section-2 .sec-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.section-2 .sec-content .text {
+    display: flex;
+    flex-direction: column;
+    min-width: 384px;
+    gap: 37px;
+}
+
+.section-2 .sec-content .text p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+}
+
+.section-2 .sec-content .image img {
+    max-width: 560px;
+    width: 100%;
+    height: auto;
+    box-shadow: 20px 20px 0px #18C172;
+}
+
+@media (max-width: 1340px) {
+    .section-2 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-2 .sec-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 65px;
+    }
+
+    .badge-text {
+        font-size: 105px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .title h3 {
+        font-size: 18px;
+    }
+
+    .section-2 .title h3 br.sp {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .badge-text {
+        font-size: 75px;
+    }
+
+    .section-2 .badge-text {
+        left: 15px;
+    }
+
+
+
+    /* .section-2 br.sp {
+        display: block;
+    }
+
+    .section-2 .sec-content .text {
+        min-width: unset;
+    }
+
+    .section-2 .sec-content .image img {
+        max-width: 100%;
+        box-shadow: 10px 10px 0px #18C172;
+    } */
+}
+
+@media (max-width: 560px) {
+    .section-2 .sec-content .text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-2 .sec-content .text p {
+        font-size: 12px;
+    }
+
+    .title h1 {
+        font-size: 23px;
+    }
+
+    .title h3 {
+        font-size: 16px;
+    }
 }
