@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+main {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    font-family: "noto-sans";
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+.nav-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 34px 18px 136px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-bar .logo {
+    display: flex;
+    gap: 27px;   
+}
+
+.nav-bar .logo img {
+    width: 117px;
+    height: auto;
+}
+
+.nav-bar .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar .logo-text h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    color: #1F3B4D;
+}
+
+.nav-bar .logo-text p {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    color: #4A90A4;
+}
+
+.nav-bar .btn-group {
+    display: flex;
+    gap: 33px;
+    height: 100%;
+}
+
+.nav-bar .btn-group button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.nav-bar .btn-group .line-btn {
+    background-color: #15BC13;
+    padding: 19px 27px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    gap: 13px;
+}
+
+.nav-bar .btn-group .line-btn img {
+    width: 47px;
+}
+
+.nav-bar .btn-group .line-btn p {
+    font-family:"Noto Sans JP", sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.nav-bar .btn-group .budget-btn {
+    background-color: #295D45;
+    padding: 32px 60px;
+    border: none;
+    border-radius: 80px;
+}
+.nav-bar .btn-group .budget-btn p {
+    font-family:"Noto Sans JP", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.nav-bar .menu-bar {
+    width: 100px;
+    display: none;
+}
+
+.nav-bar .menu-bar:hover {
+    transform: translateY(2px);
+}
+
+@media (max-width: 1390px) {
+    .nav-bar {
+        padding-right: 20px;
+    }
+    .nav-bar .btn-group {
+        display: none;
+    }
+    
+    .nav-bar .menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.section-1 {
+    width: 100%;
+    height: 765px;
+    background-image: url('../images/sc1-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 138px;
+}
+
+.section-1 h2  {
+    font-family: "inter", sans-serif;
+    font-size: 38px;
+    color: white;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.section-2 {
+    width: 100%;
+    padding: 102px 135px 55px 135px;
+    position: relative;
+}
+
+.badge-text {
+    position: absolute;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 150px;
+    color: #A1B7AC;
+    top: 16px;
+}
+
+.section-2 .badge-text {
+    right: 35px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 38px;
+    color: #18C172;
+}
+
+.title h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #295D45;
+}
+
+.section-2 br.sp {
+    display: none;
+}
