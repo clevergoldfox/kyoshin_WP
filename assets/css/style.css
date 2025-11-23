@@ -1029,3 +1029,81 @@ p {
         font-size: 14px;
     }
 }
+
+.section-9 {
+    width: 100%;
+    padding: 140px 135px 55px 135px;
+    position: relative;
+}
+
+.section-9 .badge-text {
+    right: 35px;
+    top: -40px;
+}
+
+.section-9 .sec-content {
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.section-9 .sec-content .about-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 20px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 35px;
+    margin: auto;
+}
+
+.section-9 .sec-content .about-box p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    border-bottom: #808080 1px solid;
+}
+
+@media (max-width: 1340px) {
+    .section-9 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-9 {
+        padding-top: 110px;
+    }
+    .section-9 .badge-text {
+        top: -15px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .section-9 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section-9 .badge-text {
+        left: 15px;
+        top: 0;
+    }
+
+    .section-9 .sec-content .about-box p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-9 .sec-content .about-box p {
+        font-size: 12px;
+    }
+}
+
