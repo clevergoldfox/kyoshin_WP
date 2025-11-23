@@ -426,20 +426,6 @@ p {
         left: 15px;
     }
 
-
-
-    /* .section-2 br.sp {
-        display: block;
-    }
-
-    .section-2 .sec-content .text {
-        min-width: unset;
-    }
-
-    .section-2 .sec-content .image img {
-        max-width: 100%;
-        box-shadow: 10px 10px 0px #18C172;
-    } */
 }
 
 @media (max-width: 560px) {
@@ -710,4 +696,87 @@ p {
     background-color: #295D45;
     border: none;
     border-radius: 50px;
+}
+
+.section-5 {
+    width: 100%;
+    padding: 140px 135px 55px 135px;
+    position: relative;
+}
+
+.section-5 .badge-text {
+    right: 35px;
+    top: -40px;
+}
+
+.section-5 .sec-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.section-5 .sec-content .card {
+    width: 34.7%;
+    max-width: 500px;
+    min-width: 290px;
+}
+
+.section-5 .sec-content .card img {
+    width: 100%;
+    height: auto;
+}
+
+.section-5 br.sp {
+    display: none;
+}
+
+@media (max-width: 1340px) {
+    .section-5 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-5 {
+        padding-top: 110px;
+    }
+    .section-5 .badge-text {
+        top: -15px;
+    }
+
+}
+
+@media (max-width: 810px) {
+    .section-5 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section-5 .badge-text {
+        left: 15px;
+        top: 0;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .section-5 .title h1 br.sp {
+        display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .section-5 .sec-content .text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-5 .sec-content .text p {
+        font-size: 12px;
+    }
+
 }
