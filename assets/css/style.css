@@ -1220,3 +1220,92 @@ p {
     }
 }
 
+.section-11 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-11 .logo {
+    display: flex;
+    gap: 27px;
+}
+
+.section-11 .logo img {
+    width: 117px;
+    height: auto;
+}
+
+.section-11 .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-11 .logo-text h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    color: #1F3B4D;
+}
+
+.section-11 .logo-text p {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    color: #4A90A4;
+}
+
+.section-11 .copyright {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width:768px) {
+    .section-11 .logo img {
+        width: 90px;
+    }
+
+    .section-11 .logo-text h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:560px) {
+    .section-11 .logo {
+        gap: 18px;
+    }
+
+    .section-11 .logo img {
+        width: 90px;
+    }
+
+    .section-11 .logo-text h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:470px) {
+    .section-11 .logo {
+            gap: 12px;
+    }
+
+    .section-11 .logo img {
+        width: 70px;
+    }
+
+    .section-11 .logo-text h2 {
+        font-size: 18px;
+    }
+
+    .section-11 .logo-text p {
+        font-size: 15px;
+    }
+
+    .section-11 .copyright {
+        font-size: 12px;
+    }
+}
+
