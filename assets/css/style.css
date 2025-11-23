@@ -117,11 +117,13 @@ p {
     border: none;
     border-radius: 20px;
     display: flex;
+    align-items: center;
     gap: 13px;
 }
 
 .nav-bar .btn-group .line-btn img {
     width: 47px;
+    height: 55px;
 }
 
 .nav-bar .btn-group .line-btn p {
@@ -1104,6 +1106,117 @@ p {
 @media (max-width: 600px) {
     .section-9 .sec-content .about-box p {
         font-size: 12px;
+    }
+}
+
+.section-10 {
+    width: 100%;
+    height: 464px;
+    background-image: url('../images/Rectangle\ \(14\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-10 h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: center;
+    line-height: 50px;
+}
+
+.section-10 .budget-btn {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 28px;
+    color: white;
+    padding: 30px 70px;
+    background-color: #295D45;
+    border: none;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.section-10 .line-btn {
+    background-color: #15BC13;
+    padding: 19px 27px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.section-10 .line-btn img {
+    width: 47px;
+    height: 55px;
+}
+
+.section-10 .line-btn p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.section-10 h2 br.sp {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .section-10 h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 790px) {
+    .section-10 h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-10 .budget-btn {
+        font-size: 20px;
+        padding: 20px 50px;
+    }
+
+    .section-10 .line-btn {
+        padding: 5px 23px;
+    }
+
+    .section-10 .line-btn p {
+        font-size: 20px;
+    }
+
+    .section-10 h2 br.sp{
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-10 h2 {
+        font-size: 18px;
+    }
+
+    .section-10 .budget-btn {
+        font-size: 17px;
+        padding: 15px 30px;
+    }
+
+    .section-10 .line-btn {
+        padding: 5px 10px;
+    }
+
+    .section-10 .line-btn p {
+        font-size: 17px;
     }
 }
 
