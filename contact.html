@@ -5,8 +5,7 @@
     <title>株式会社共進</title>
     <meta data-n-head="ssr" charset="utf-8">
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-    <meta data-n-head="ssr" data-hid="description" name="description"
-        content="株式会社共進">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="株式会社共進">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -15,7 +14,8 @@
     <link href="https://db.onlinewebfonts.com/c/6bb72788de0e0eb09756d36c0ba629cf?family=Fugaz+One" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -31,16 +31,25 @@
                 </div>
             </div>
             <div class="btn-group">
-                <button class="line-btn">
+                <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
                     <img src="./assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
-                </button>
+                </a>
                 <button class="budget-btn">
                     <p>お見積りはこちら</p>
                 </button>
             </div>
-            <div class="menu-bar">
+            <div class="menu-bar" id="menu-btn">
                 <img src="./assets/images/menu.png" alt="">
+            </div>
+            <div class="menu-btn-group" id="menu-show">
+                <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
+                    <img src="./assets/images/line-icon.png" alt="">
+                    <p>公式LINEから<br>簡単お見積もり</p>
+                </a>
+                <button class="budget-btn">
+                    <p>お見積りはこちら</p>
+                </button>
             </div>
         </div>
     </div>
@@ -51,14 +60,14 @@
         <h2>CONTACT</h2>
         <div class="sec-content">
             <p class="alram-text"><span>お問い合わせ</span>３営業日以内にご返信させていただきます。</p>
-        
+
             <form action="">
                 <div class="form-group">
                     <div class="label-group">
                         <label for="">お名前</label>
                         <p>必須</p>
                     </div>
-                    <input type="text" placeholder="例）富士 見太郎"/>
+                    <input type="text" placeholder="例）富士 見太郎" />
                 </div>
                 <div class="form-group">
                     <div class="label-group">
@@ -76,7 +85,7 @@
                         <select name="prefectures" id="prefectures" placeholder="都道府県を選択">
                             <option value="">都道府県を選択</option>
                         </select>
-                        <input type="text"  placeholder="例）港区麻布台1-4-3">
+                        <input type="text" placeholder="例）港区麻布台1-4-3">
                     </div>
                 </div>
                 <div class="form-group">
@@ -114,10 +123,10 @@
         <button class="budget-btn">
             <p>お見積りはこちら</p>
         </button>
-        <button class="line-btn">
+        <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
             <img src="./assets/images/line-icon.png" alt="">
             <p>公式LINEから<br>簡単お見積もり</p>
-        </button>
+        </a>
     </div>
     <div class="section-11">
         <div class="logo">
@@ -131,4 +140,5 @@
         </div>
         <p class="copyright">Copyright kyoshin Co., Ltd. All Rights Reserved.</p>
     </div>
+    <script src="./assets/js/menu.js"></script>
 </body>

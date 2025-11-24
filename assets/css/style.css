@@ -97,21 +97,24 @@ p {
     color: #4A90A4;
 }
 
-.nav-bar .btn-group {
+.nav-bar {
     display: flex;
     gap: 33px;
     height: 100%;
 }
 
-.nav-bar .btn-group button {
+.nav-bar button {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
+.nav-bar .btn-group {
+    display: contents;
+}
 
-.nav-bar .btn-group .line-btn {
+.nav-bar .line-btn {
     background-color: #15BC13;
     padding: 19px 27px;
     border: none;
@@ -121,25 +124,29 @@ p {
     gap: 13px;
 }
 
-.nav-bar .btn-group .line-btn img {
+.line-btn {
+    text-decoration: none;
+}
+
+.nav-bar .line-btn img {
     width: 47px;
     height: 55px;
 }
 
-.nav-bar .btn-group .line-btn p {
+.nav-bar .line-btn p {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 30px;
     color: #FFFFFF;
 }
 
-.nav-bar .btn-group .budget-btn {
+.nav-bar .budget-btn {
     background-color: #295D45;
     padding: 32px 60px;
     border: none;
     border-radius: 80px;
 }
 
-.nav-bar .btn-group .budget-btn p {
+.nav-bar .budget-btn p {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 28px;
     color: #FFFFFF;
@@ -155,6 +162,30 @@ p {
 
 .nav-bar .menu-bar:hover {
     transform: translateY(2px);
+}
+
+.nav-bar .menu-btn-group {
+    position: absolute;
+    right: 0;
+    top: 135px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 50px;
+    background: rgba(0, 150, 100, 0.4);
+    border-radius: 20px;
+}
+
+.nav-bar .menu-btn-group .line-btn p {
+    font-size: 18px;
+}
+
+.nav-bar .menu-btn-group .budget-btn p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
 }
 
 @media (max-width: 1390px) {
@@ -1917,6 +1948,7 @@ select {
     align-items: center;
     justify-content: center;
 }
+
 .swiper-button-next {
     right: calc(50% - 200px);
     transform: translateX(50%);
@@ -1936,6 +1968,7 @@ select {
         width: 60px;
         height: 60px;
     }
+
     .swiper-button-next {
         right: calc(50% - 150px);
         width: 60px;
@@ -1947,6 +1980,7 @@ select {
     .swiper-button-prev {
         left: calc(50% - 110px);
     }
+
     .swiper-button-next {
         right: calc(50% - 110px);
     }
