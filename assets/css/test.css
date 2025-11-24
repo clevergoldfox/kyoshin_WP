@@ -1,0 +1,27 @@
+.slider {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(200%); /* because we duplicated images */
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .slide-track img {
+    width: 200px;          /* Adjust image size */
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  /* Animation */
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

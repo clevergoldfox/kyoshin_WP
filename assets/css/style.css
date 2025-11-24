@@ -670,8 +670,7 @@ p {
     height: 330px;
     width: 100%;
     display: flex;
-    gap: 15px;
-    
+
 }
 
 .section-4 .slide-bar .slide-card {
@@ -1177,13 +1176,13 @@ p {
 
 @media (max-width: 1000px) {
     .section-10 h2 {
-        font-size: 24px!important;
+        font-size: 24px !important;
     }
 }
 
 @media (max-width: 790px) {
     .section-10 h2 {
-        font-size: 22px!important;
+        font-size: 22px !important;
     }
 }
 
@@ -1499,13 +1498,13 @@ p {
         padding: 30px 20px 30px 20px;
         gap: 80px;
     }
-    
+
     .section-14 h2 {
         font-size: 36px;
     }
-    
+
     .section-14 .about-row p {
-        font-size: 16px!important;
+        font-size: 16px !important;
     }
 
     .section-14 .sec-content .about-box .about-row:nth-of-type(5) {
@@ -1525,7 +1524,7 @@ p {
     }
 
     .section-14 .about-row p {
-        font-size: 14px!important;
+        font-size: 14px !important;
     }
 
     .section-14 .sec-content .about-box .about-row:nth-of-type(5) {
@@ -1543,11 +1542,11 @@ p {
     }
 
     .section-14 .sec-content .about-box .about-row p:nth-of-type(even) {
-        left: 110px!important;
+        left: 110px !important;
     }
 
     .section-14 .about-row p {
-        font-size: 12px!important;
+        font-size: 12px !important;
     }
 
     .section-14 .sec-content .about-box .about-row:nth-of-type(5) {
@@ -1580,10 +1579,11 @@ p {
     height: auto;
 }
 
-.section-15 .map-box iframe{
+.section-15 .map-box iframe {
     height: 440px;
     width: 100%;
 }
+
 /* .section-15 .map-box img{
     width: 100%;
     height: auto;
@@ -1594,7 +1594,7 @@ p {
         padding: 30px 20px 30px 20px;
         gap: 80px;
     }
-    
+
 }
 
 @media (max-width:425px) {
@@ -1675,7 +1675,7 @@ p {
     margin: auto;
 }
 
-.section-17 .sec-content .alram-text span{
+.section-17 .sec-content .alram-text span {
     font-size: 21px;
 }
 
@@ -1727,12 +1727,15 @@ p {
     flex-direction: column;
 }
 
-.section-17 form .address-input input, select {
-    position: unset!important;
+.section-17 form .address-input input,
+select {
+    position: unset !important;
     margin-top: 5px;
 }
 
-.section-17 form .form-group input, textarea, select {
+.section-17 form .form-group input,
+textarea,
+select {
     margin-left: 5%;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 14px;
@@ -1831,12 +1834,16 @@ p {
         left: 200px;
     }
 
-    .section-17 form .form-group input, textarea, select {
+    .section-17 form .form-group input,
+    textarea,
+    select {
         left: 280px;
         font-size: 12px;
     }
 
-    .section-17 form .form-group input, textarea, select {
+    .section-17 form .form-group input,
+    textarea,
+    select {
         margin-left: 0;
     }
 
@@ -1877,5 +1884,70 @@ p {
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 11px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    width: 330px;
+    /* slide width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-prev {
+    left: calc(50% - 200px);
+    transform: translateX(-50%);
+    background: #A1B7AC;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-button-next {
+    right: calc(50% - 200px);
+    transform: translateX(50%);
+    background: #A1B7AC;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 660px) {
+    .swiper-button-prev {
+        left: calc(50% - 150px);
+        width: 60px;
+        height: 60px;
+    }
+    .swiper-button-next {
+        right: calc(50% - 150px);
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    .swiper-button-prev {
+        left: calc(50% - 110px);
+    }
+    .swiper-button-next {
+        right: calc(50% - 110px);
     }
 }
