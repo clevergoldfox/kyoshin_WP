@@ -37,11 +37,11 @@ Template Name: Contact Page
                 </div>
             </a>
             <div class="link-group">
-                <a href="<?php echo site_url('/'); ?>?page_id=13" class="page-link">
+                <a href="<?php echo site_url('/'); ?>about" class="page-link">
                     <h3>会社概要</h3>
                     <p>ABOUT</p>
                 </a>
-                <a href="<?php echo site_url('/'); ?>?page_id=15" class="page-link">
+                <a href="<?php echo site_url('/'); ?>contact" class="page-link">
                     <h3>お問い合わせ</h3>
                     <p>CONTACT</p>
                 </a>
@@ -83,14 +83,14 @@ Template Name: Contact Page
                         <label for="">お名前</label>
                         <p>必須</p>
                     </div>
-                    <input type="text" placeholder="例）富士 見太郎" />
+                    <input type="text" name="user" placeholder="例）富士 見太郎" />
                 </div>
                 <div class="form-group">
                     <div class="label-group">
                         <label for="">郵便番号</label>
                         <p>必須</p>
                     </div>
-                    <input type="text" placeholder="例）000-1234">
+                    <input type="text" name="postal" placeholder="例）000-1234">
                 </div>
                 <div class="form-group">
                     <div class="label-group">
@@ -98,10 +98,10 @@ Template Name: Contact Page
                         <p>必須</p>
                     </div>
                     <div class="address-input">
-                        <select name="prefectures" id="prefectures" placeholder="都道府県を選択">
+                        <select name="prefectures" name="prefecture" id="prefectures" placeholder="都道府県を選択">
                             <option value="">都道府県を選択</option>
                         </select>
-                        <input type="text" placeholder="例）港区麻布台1-4-3">
+                        <input type="text" name="address" placeholder="例）港区麻布台1-4-3">
                     </div>
                 </div>
                 <div class="form-group">
@@ -109,25 +109,27 @@ Template Name: Contact Page
                         <label for="">電話番号</label>
                         <p>必須</p>
                     </div>
-                    <input type="text" placeholder="例）03-1234-5678">
+                    <input type="text" name="tel" placeholder="例）03-1234-5678">
                 </div>
                 <div class="form-group">
                     <div class="label-group">
                         <label for="">メールアドレス</label>
                         <p>必須</p>
                     </div>
-                    <input type="text" placeholder="taka_id@icloud.com">
+                    <input type="text" name="email" placeholder="taka_id@icloud.com">
                 </div>
                 <div class="form-group">
                     <div class="label-group">
                         <label for="">お問い合わせ内容</label>
                         <p>必須</p>
                     </div>
-                    <textarea name="" id="" placeholder="お問い合わせ内容を入力してください"></textarea>
+                    <textarea name="content" id="" placeholder="お問い合わせ内容を入力してください"></textarea>
                 </div>
                 <p class="privacy"><span>利用規約</span>（第4条の反社会的勢力の不該当を含む）を<br class="sp">確認し、内容に同意のうえ送信するものとします。</p>
                 <button type="submit">上記に同意して送信する</button>
             </form>
+
+            <?php echo do_shortcode('[contact-form-7 id="1c4eae3" title="Test"]'); ?>
         </div>
     </div>
     <div class="section-10">

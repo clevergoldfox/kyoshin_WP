@@ -31,11 +31,11 @@
                 </div>
             </a>
             <div class="link-group">
-                <a href="<?php echo site_url('/'); ?>?page_id=13" class="page-link">
+                <a href="<?php echo site_url('/'); ?>about" class="page-link">
                     <h3>会社概要</h3>
                     <p>ABOUT</p>
                 </a>
-                <a href="<?php echo site_url('/'); ?>?page_id=15" class="page-link">
+                <a href="<?php echo site_url('/'); ?>contact" class="page-link">
                     <h3>お問い合わせ</h3>
                     <p>CONTACT</p>
                 </a>
