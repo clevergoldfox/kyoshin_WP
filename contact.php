@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Contact Page
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +12,9 @@
     <meta data-n-head="ssr" charset="utf-8">
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
     <meta data-n-head="ssr" data-hid="description" name="description" content="株式会社共進">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/base.css">
     <link href="https://db.onlinewebfonts.com/c/bbcc889bed34a1678c6a044df8e83428?family=Noto+Sans" rel="stylesheet"
         type="text/css" />
     <link href="https://db.onlinewebfonts.com/c/6bb72788de0e0eb09756d36c0ba629cf?family=Fugaz+One" rel="stylesheet"
@@ -21,18 +27,28 @@
 <body>
     <div class="content">
         <div class="nav-bar">
-            <div class="logo">
+            <a class="logo" href="<?php echo site_url('/'); ?>">
                 <div class="logo-img">
-                    <img src="./assets/images/logo.png" alt="Statra Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Statra Logo">
                 </div>
                 <div class="logo-text">
                     <h2>株式会社共進</h2>
                     <p>KYOSHIN</p>
                 </div>
+            </a>
+            <div class="link-group">
+                <a href="<?php echo site_url('/'); ?>?page_id=13" class="page-link">
+                    <h3>会社概要</h3>
+                    <p>ABOUT</p>
+                </a>
+                <a href="<?php echo site_url('/'); ?>?page_id=15" class="page-link">
+                    <h3>お問い合わせ</h3>
+                    <p>CONTACT</p>
+                </a>
             </div>
             <div class="btn-group">
                 <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                    <img src="./assets/images/line-icon.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
                 </a>
                 <button class="budget-btn">
@@ -40,11 +56,11 @@
                 </button>
             </div>
             <div class="menu-bar" id="menu-btn">
-                <img src="./assets/images/menu.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.png" alt="">
             </div>
             <div class="menu-btn-group" id="menu-show">
                 <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                    <img src="./assets/images/line-icon.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
                 </a>
                 <button class="budget-btn">
@@ -124,14 +140,14 @@
             <p>お見積りはこちら</p>
         </button>
         <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-            <img src="./assets/images/line-icon.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
             <p>公式LINEから<br>簡単お見積もり</p>
         </a>
     </div>
     <div class="section-11">
         <div class="logo">
             <div class="logo-img">
-                <img src="./assets/images/logo.png" alt="Statra Logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Statra Logo">
             </div>
             <div class="logo-text">
                 <h2>株式会社共進</h2>
@@ -140,5 +156,5 @@
         </div>
         <p class="copyright">Copyright kyoshin Co., Ltd. All Rights Reserved.</p>
     </div>
-    <script src="./assets/js/menu.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/menu.js"></script>
 </body>

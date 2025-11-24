@@ -7,9 +7,9 @@
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
     <meta data-n-head="ssr" data-hid="description" name="description" content="株式会社共進">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/base.css">
     <link href="https://db.onlinewebfonts.com/c/bbcc889bed34a1678c6a044df8e83428?family=Noto+Sans" rel="stylesheet"
     type="text/css" />
     <link href="https://db.onlinewebfonts.com/c/6bb72788de0e0eb09756d36c0ba629cf?family=Fugaz+One" rel="stylesheet"
@@ -21,18 +21,28 @@
 <body>
     <div class="content">
         <div class="nav-bar">
-            <div class="logo">
+            <a class="logo" href="<?php echo site_url('/'); ?>">
                 <div class="logo-img">
-                    <img src="./assets/images/logo.png" alt="Statra Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Statra Logo">
                 </div>
                 <div class="logo-text">
                     <h2>株式会社共進</h2>
                     <p>KYOSHIN</p>
                 </div>
+            </a>
+            <div class="link-group">
+                <a href="<?php echo site_url('/'); ?>?page_id=13" class="page-link">
+                    <h3>会社概要</h3>
+                    <p>ABOUT</p>
+                </a>
+                <a href="<?php echo site_url('/'); ?>?page_id=15" class="page-link">
+                    <h3>お問い合わせ</h3>
+                    <p>CONTACT</p>
+                </a>
             </div>
             <div class="btn-group">
                 <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                    <img src="./assets/images/line-icon.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
                 </a>
                 <button class="budget-btn">
@@ -40,11 +50,11 @@
                 </button>
             </div>
             <div class="menu-bar" id="menu-btn">
-                <img src="./assets/images/menu.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.png" alt="">
             </div>
             <div class="menu-btn-group" id="menu-show">
                 <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                    <img src="./assets/images/line-icon.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
                 </a>
                 <button class="budget-btn">
@@ -86,7 +96,7 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="./assets/images/Rectangle.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle.png" alt="">
                 </div>
             </div>
         </div>
@@ -106,37 +116,37 @@
             </div>
             <div class="sec-content">
                 <div class="card">
-                    <img src="./assets/images/Rectangle (1).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (1).png" alt="">
                     <p>外壁塗装</p>
                 </div>
                 <div class="card">
-                    <img src="./assets/images/Rectangle (2).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (2).png" alt="">
                     <p>屋根塗装</p>
                 </div>
                 <div class="card">
-                    <img src="./assets/images/Rectangle (3).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (3).png" alt="">
                     <p>屋根吹き替え工事</p>
                 </div>
                 <div class="card">
-                    <img src="./assets/images/Rectangle (4).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (4).png" alt="">
                     <p>防水工事</p>
                 </div>
                 <div class="card">
-                    <img src="./assets/images/Rectangle (5).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (5).png" alt="">
                     <p>コーキング工事</p>
                 </div>
                 <div class="card">
-                    <img src="./assets/images/Rectangle (6).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (6).png" alt="">
                     <p>内装塗装工事</p>
                 </div>
                 <div class="card">
-                    <img src="./assets/images/Rectangle (7).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (7).png" alt="">
                     <p>店舗内装塗装</p>
                 </div>
             </div>
             <div class="footer">
                 <div class="image">
-                    <img src="./assets/images/Rectangle (8).png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (8).png" alt="">
                 </div>
                 <div class="text-box">
                     <p>遮熱塗料を使った屋根修理は</p>
@@ -151,63 +161,63 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper slide-bar">
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (9).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (9).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (10).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (10).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (11).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (11).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (12).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (12).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (13).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (13).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (9).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (9).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (10).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (10).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (11).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (11).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (12).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (12).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (13).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (13).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (9).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (9).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (10).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (10).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (11).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (11).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (12).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (12).png" alt="">
                         <p>タイトル</p>
                     </div>
                     <div class="swiper-slide slide-card">
-                        <img src="./assets/images/Rectangle (13).png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Rectangle (13).png" alt="">
                         <p>タイトル</p>
                     </div>
                 </div>
@@ -225,16 +235,16 @@
             </div>
             <div class="sec-content">
                 <div class="card">
-                    <img src="./assets/images/reason1.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reason1.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/reason2.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reason2.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/reason3.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reason3.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/reason4.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reason4.svg" alt="">
                 </div>
             </div>
         </div>
@@ -255,52 +265,52 @@
             </div>
             <div class="sec-content">
                 <div class="card">
-                    <img src="./assets/images/flow1.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flow1.svg" alt="">
                 </div>
                 <div class="arrow">
-                    <img src="./assets/images/arrow.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                 </div>
                 <div class="arrow-vert">
-                    <img src="./assets/images/arrow-vert.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-vert.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/flow2.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flow2.svg" alt="">
                 </div>
                 <div class="arrow second-arrow">
-                    <img src="./assets/images/arrow.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                 </div>
                 <div class="arrow-vert">
-                    <img src="./assets/images/arrow-vert.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-vert.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/flow3.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flow3.svg" alt="">
                 </div>
                 <div class="arrow third-arrow">
-                    <img src="./assets/images/arrow.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                 </div>
                 <div class="arrow-vert">
-                    <img src="./assets/images/arrow-vert.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-vert.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/flow4.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flow4.svg" alt="">
                 </div>
                 <div class="arrow second-arrow">
-                    <img src="./assets/images/arrow.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                 </div>
                 <div class="arrow-vert">
-                    <img src="./assets/images/arrow-vert.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-vert.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/flow5.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flow5.svg" alt="">
                 </div>
                 <div class="arrow">
-                    <img src="./assets/images/arrow.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                 </div>
                 <div class="arrow-vert">
-                    <img src="./assets/images/arrow-vert.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-vert.svg" alt="">
                 </div>
                 <div class="card">
-                    <img src="./assets/images/flow6.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flow6.svg" alt="">
                 </div>
             </div>
         </div>
@@ -357,14 +367,14 @@
                 <p>お見積りはこちら</p>
             </button>
             <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                <img src="./assets/images/line-icon.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                 <p>公式LINEから<br>簡単お見積もり</p>
             </a>
         </div>
         <div class="section-11">
             <div class="logo">
                 <div class="logo-img">
-                    <img src="./assets/images/logo.png" alt="Statra Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Statra Logo">
                 </div>
                 <div class="logo-text">
                     <h2>株式会社共進</h2>
@@ -374,7 +384,8 @@
             <p class="copyright">Copyright kyoshin Co., Ltd. All Rights Reserved.</p>
         </div>
     </div>
-    <script src="./assets/js/index.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/menu.js"></script>
 </body>
 
 </html>

@@ -64,7 +64,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 34px 18px 136px;
+    padding: 24px 10px 18px 30px;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -73,6 +73,11 @@ p {
 .nav-bar .logo {
     display: flex;
     gap: 27px;
+    text-decoration: none;
+}
+
+.nav-bar .logo:hover {
+    scale: 1.1;
 }
 
 .nav-bar .logo img {
@@ -97,10 +102,37 @@ p {
     color: #4A90A4;
 }
 
-.nav-bar {
+.nav-bar .link-group {
     display: flex;
-    gap: 33px;
-    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-bar .link-group .page-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-bar .link-group .page-link:hover {
+    scale: 1.1;
+}
+
+.nav-bar .link-group .page-link h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    color: #1F3B4D;
+}
+
+.nav-bar .link-group .page-link p {
+    font-family: "montserrat", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #4A90A4;
 }
 
 .nav-bar button {
@@ -111,12 +143,14 @@ p {
 }
 
 .nav-bar .btn-group {
-    display: contents;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .nav-bar .line-btn {
     background-color: #15BC13;
-    padding: 19px 27px;
+    padding: 10px 20px;
     border: none;
     border-radius: 20px;
     display: flex;
@@ -135,20 +169,20 @@ p {
 
 .nav-bar .line-btn p {
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 30px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
 .nav-bar .budget-btn {
     background-color: #295D45;
-    padding: 32px 60px;
+    padding: 24px 28px;
     border: none;
     border-radius: 80px;
 }
 
 .nav-bar .budget-btn p {
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     color: #FFFFFF;
 }
 
@@ -186,6 +220,14 @@ p {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
+}
+
+.budget-btn {
+    cursor: pointer;
+}
+
+.line-btn:hover, .budget-btn:hover{
+    scale: 1.1;
 }
 
 @media (max-width: 1390px) {

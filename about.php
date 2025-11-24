@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: About Page
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +13,9 @@
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
     <meta data-n-head="ssr" data-hid="description" name="description"
         content="株式会社共進">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/base.css">
     <link href="https://db.onlinewebfonts.com/c/bbcc889bed34a1678c6a044df8e83428?family=Noto+Sans" rel="stylesheet"
         type="text/css" />
     <link href="https://db.onlinewebfonts.com/c/6bb72788de0e0eb09756d36c0ba629cf?family=Fugaz+One" rel="stylesheet"
@@ -21,18 +27,28 @@
 <body>
     <div class="content">
         <div class="nav-bar">
-            <div class="logo">
+            <a class="logo" href="<?php echo site_url('/'); ?>">
                 <div class="logo-img">
-                    <img src="./assets/images/logo.png" alt="Statra Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Statra Logo">
                 </div>
                 <div class="logo-text">
                     <h2>株式会社共進</h2>
                     <p>KYOSHIN</p>
                 </div>
+            </a>
+            <div class="link-group">
+                <a href="<?php echo site_url('/'); ?>?page_id=13" class="page-link">
+                    <h3>会社概要</h3>
+                    <p>ABOUT</p>
+                </a>
+                <a href="<?php echo site_url('/'); ?>?page_id=15" class="page-link">
+                    <h3>お問い合わせ</h3>
+                    <p>CONTACT</p>
+                </a>
             </div>
             <div class="btn-group">
                 <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                    <img src="./assets/images/line-icon.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
                 </a>
                 <button class="budget-btn">
@@ -40,11 +56,11 @@
                 </button>
             </div>
             <div class="menu-bar" id="menu-btn">
-                <img src="./assets/images/menu.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.png" alt="">
             </div>
             <div class="menu-btn-group" id="menu-show">
                 <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-                    <img src="./assets/images/line-icon.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
                     <p>公式LINEから<br>簡単お見積もり</p>
                 </a>
                 <button class="budget-btn">
@@ -60,7 +76,7 @@
         <h2>代表挨拶</h2> 
         <div class="sec-content">
             <div class="sec-img">
-                <img src="./assets/images/about.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about.png" alt="">
             </div>
             <div class="sec-text">
                 <h3>
@@ -142,7 +158,7 @@
     <div class="section-15">
         <h2>Map</h2>
         <div class="map-box">
-            <!-- <img src="./assets/images/map.png" alt=""> -->
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map.png" alt=""> -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1234567890123!2d139.12345678901234!3d35.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1234567890%3A0x1234567890abcdef!2z44CSMTUwLTAwMDEg5p2x5Lqs6YO95aSn5a6_5Yy65pys55S677y77yR77yR77ySIOW3peWFtuaWsOWPiumcgOeUqOWbveWkjeWkjeWkjeWkjeWkjeWkjeWkqOWPiumcgOeUqOWbveWkjeWkjeWkjeWkjeWkjeWkqOWPiumcgOeUqOWbveWkjeWkjeWkqg!5e0!3m2!1sja!2sjp!4v1610000000000!5m2!1sja!2sjp"></iframe>
     </div>
@@ -156,14 +172,14 @@
             <p>お見積りはこちら</p>
         </button>
         <a class="line-btn" href="https://lin.ee/34WFjJW" target="_blank">
-            <img src="./assets/images/line-icon.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-icon.png" alt="">
             <p>公式LINEから<br>簡単お見積もり</p>
         </a>
     </div>
     <div class="section-11">
         <div class="logo">
             <div class="logo-img">
-                <img src="./assets/images/logo.png" alt="Statra Logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Statra Logo">
             </div>
             <div class="logo-text">
                 <h2>株式会社共進</h2>
@@ -172,4 +188,5 @@
         </div>
         <p class="copyright">Copyright kyoshin Co., Ltd. All Rights Reserved.</p>
     </div>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/menu.js"></script>
 </body>
